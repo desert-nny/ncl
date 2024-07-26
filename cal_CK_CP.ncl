@@ -95,13 +95,13 @@ begin
   copy_VarMeta(t_clim, dcp)
 
   ; if vertical integral, need
-  ;f7 = addfile(filepath7, "r")
-  ;pres = f7->msl                                     ;read surface pressure (Pa)
-  ;pMar = pres({yrSrt+"03":yrEnd+"03":12},:,:)
-  ;pApr = pres({yrSrt+"04":yrEnd+"04":12},:,:)
-  ;pMay = pres({yrSrt+"05":yrEnd+"05":12},:,:)
-  ;pres_MAM = dim_avg_n_Wrap((pMar+pApr+pMay)/3., 0)  ;climatological MAM pres
-  ;copy_VarCoords(pMar(0,:,:), pres_MAM)
+  ; f7 = addfile(filepath7, "r")
+  ; pres = f7->msl                                     ;read surface pressure (Pa)
+  ; pMar = pres({yrSrt+"03":yrEnd+"03":12},:,:)
+  ; pApr = pres({yrSrt+"04":yrEnd+"04":12},:,:)
+  ; pMay = pres({yrSrt+"05":yrEnd+"05":12},:,:)
+  ; pres_MAM = dim_avg_n_Wrap((pMar+pApr+pMay)/3., 0)  ;climatological MAM pres
+  ; copy_VarCoords(pMar(0,:,:), pres_MAM)
 
   psfc      = pres_MAM
   ptop      = 100.      ; 1hPa
