@@ -103,12 +103,12 @@ begin
   ; pres_MAM = dim_avg_n_Wrap((pMar+pApr+pMay)/3., 0)  ;climatological MAM pres
   ; copy_VarCoords(pMar(0,:,:), pres_MAM)
 
-  psfc      = pres_MAM
-  ptop      = 100.      ; 1hPa
-  dp        = dpres_plevel_Wrap(level, psfc, ptop, 0)
-  dcp_new   = -dcp*dp
-  cp = dim_sum_n_Wrap(dcp_new, 0)
-  copy_VarMeta(dcp(0,:,:), cp)
+  ; psfc      = pres_MAM
+  ; ptop      = 100.      ; 1hPa
+  ; dp        = dpres_plevel_Wrap(level, psfc, ptop, 0)
+  ; dcp_new   = -dcp*dp
+  ; cp = dim_sum_n_Wrap(dcp_new, 0)
+  ; copy_VarMeta(dcp(0,:,:), cp)
 
 ;---------calculate Ck------------
   re = 6378388
